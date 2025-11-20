@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta</title>
+    <link rel="stylesheet" href="static/estilos.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+
+<body>
+
+    <h1 class="titulo">FORMULARIO DE ENCUESTA</h1>
+
+    <img src="img/encuesta.png" class="imagen">
+    
+    <form class="formulario" id="formEncuesta">
+
+        <label>Gustos Musicales:</label>
+        <select id="musica">
+            <option>Rock</option>
+            <option>Pop</option>
+            <option>Reggaetón</option>
+            <option>Clásica</option>
+            <option>Otros</option>
+        </select>
+
+        <label>Gustos Deportivos:</label>
+        <select id="deporte">
+            <option>Fútbol</option>
+            <option>Vóley</option>
+            <option>Basket</option>
+            <option>Natación</option>
+            <option>Otros</option>
+        </select>
+
+        <label>Nivel de Estudios:</label>
+        <select id="estudios">
+            <option>Primaria</option>
+            <option>Secundaria</option>
+            <option>Universitario</option>
+            <option>Técnico</option>
+        </select>
+
+        <label>Situación Laboral:</label>
+        <select id="laboral">
+            <option>Desempleado</option>
+            <option>Empleado</option>
+            <option>Independiente</option>
+            <option>Estudiante</option>
+        </select>
+
+        <label>Comentarios adicionales:</label>
+        <textarea id="comentario" rows="4"></textarea>
+
+        <button type="submit" class="boton">Enviar Encuesta</button>
+
+    </form>
+
+    <p id="estado"></p>
+
+    <div class="contenedor-botones">
+        <a href="index.html" class="boton">Inicio</a>
+        <a href="datos.html" class="boton">Ir a Datos Personales</a>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
